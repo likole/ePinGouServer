@@ -14,6 +14,8 @@
         <configuration>
           <fileset id="s2fileset" name="Default File Set " removed="false">
             <file>file://$MODULE_DIR$/src/struts.xml</file>
+            <file>jar://$MODULE_DIR$/../24HoursServer/lib/struts2-core.jar!/struts-default.xml</file>
+            <file>jar://$MODULE_DIR$/../24HoursServer/lib/struts2-spring-plugin-2.5.10.1.jar!/struts-plugin.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
@@ -31,6 +33,7 @@
         <datasource-map>
           <unit-entry name="a.xml" value="7fa6e372-f221-42ea-8316-aaa83af7e1ee" />
           <unit-entry name="noname-applicationContext.xml@1098" value="dataSource" />
+          <unit-entry name="noname-applicationContext.xml@1108" value="dataSource" />
         </datasource-map>
         <naming-strategy-map />
       </configuration>
