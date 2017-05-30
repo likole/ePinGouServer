@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Created by likole on 4/14/2017.
+ * Created by likole on 4/21/2017.
  */
 @Entity
 public class User {
@@ -17,7 +17,10 @@ public class User {
     private String qq;
     private String avater;
     private String name;
-    private Byte phoneValid;
+    private String email;
+    private Byte emailValid;
+    private String address;
+    private String token;
 
     @Id
     @Column(name = "uid", nullable = false)
@@ -90,13 +93,43 @@ public class User {
     }
 
     @Basic
-    @Column(name = "phone_valid", nullable = true)
-    public Byte getPhoneValid() {
-        return phoneValid;
+    @Column(name = "email", nullable = true, length = 320)
+    public String getEmail() {
+        return email;
     }
 
-    public void setPhoneValid(Byte phoneValid) {
-        this.phoneValid = phoneValid;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Basic
+    @Column(name = "email_valid", nullable = true)
+    public Byte getEmailValid() {
+        return emailValid;
+    }
+
+    public void setEmailValid(Byte emailValid) {
+        this.emailValid = emailValid;
+    }
+
+    @Basic
+    @Column(name = "address", nullable = true, length = 20)
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Basic
+    @Column(name = "token", nullable = false, length = 32)
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     @Override
@@ -113,7 +146,10 @@ public class User {
         if (qq != null ? !qq.equals(user.qq) : user.qq != null) return false;
         if (avater != null ? !avater.equals(user.avater) : user.avater != null) return false;
         if (name != null ? !name.equals(user.name) : user.name != null) return false;
-        if (phoneValid != null ? !phoneValid.equals(user.phoneValid) : user.phoneValid != null) return false;
+        if (email != null ? !email.equals(user.email) : user.email != null) return false;
+        if (emailValid != null ? !emailValid.equals(user.emailValid) : user.emailValid != null) return false;
+        if (address != null ? !address.equals(user.address) : user.address != null) return false;
+        if (token != null ? !token.equals(user.token) : user.token != null) return false;
 
         return true;
     }
@@ -127,7 +163,10 @@ public class User {
         result = 31 * result + (qq != null ? qq.hashCode() : 0);
         result = 31 * result + (avater != null ? avater.hashCode() : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (phoneValid != null ? phoneValid.hashCode() : 0);
+        result = 31 * result + (email != null ? email.hashCode() : 0);
+        result = 31 * result + (emailValid != null ? emailValid.hashCode() : 0);
+        result = 31 * result + (address != null ? address.hashCode() : 0);
+        result = 31 * result + (token != null ? token.hashCode() : 0);
         return result;
     }
 }

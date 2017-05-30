@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ePinGouServer:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/ePinGouServer_war</output-path>
+    <root id="archive" name="ePinGouServer_war.war">
+      <element id="artifact" artifact-name="ePinGou" />
+      <element id="module-output" name="ePinGouServer" />
+    </root>
+  </artifact>
+</component>
