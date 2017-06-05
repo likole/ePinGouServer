@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Created by likole on 4/21/2017.
+ * Created by likole on 6/1/2017.
  */
 @Entity
 public class User {

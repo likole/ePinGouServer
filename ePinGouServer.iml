@@ -34,7 +34,7 @@
         <datasource-map>
           <unit-entry name="a.xml" value="7fa6e372-f221-42ea-8316-aaa83af7e1ee" />
           <unit-entry name="noname-applicationContext.xml@1098" value="dataSource" />
-          <unit-entry name="noname-applicationContext.xml@1108" value="dataSource" />
+          <unit-entry name="noname-applicationContext.xml@1108" value="7fa6e372-f221-42ea-8316-aaa83af7e1ee" />
         </datasource-map>
         <naming-strategy-map />
       </configuration>
@@ -53,6 +53,6 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.25-bin" level="project" />
     <orderEntry type="library" name="Struts 2-2.3.20.1" level="application" />
     <orderEntry type="library" name="Spring MVC-4.3.7.RELEASE" level="application" />
-    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="application" />
   </component>
 </module>
